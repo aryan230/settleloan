@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./assets/css/bootstrap.min.css";
+import "./assets/css/animate.css";
+import "./assets/css/custom-animation.css";
+import "./assets/css/slick.css";
+import "./assets/css/nice-select.css";
+import "./assets/css/flaticon.css";
+import "./assets/css/swiper-bundle.css";
+import "./assets/css/meanmenu.css";
+import "./assets/css/font-awesome-pro.css";
+import "./assets/css/magnific-popup.css";
+import "./assets/css/spacing.css";
+import "./assets/css/style.css";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Screens/Home";
+import DebtFree from "./Screens/Services/DebtFree";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/debt-free-solutions" element={<DebtFree />}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
