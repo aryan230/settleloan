@@ -75,9 +75,8 @@ function Hero() {
                 Stop recovery calls in 24 hours.
               </h4> */}
               <h3 className="hero-title">
-                Stop your Bank harassment and start your{" "}
-                <span className="something_title_span">Legal</span> proceeding
-                in 24 hours.
+                Stop your Bank harassment and start your Legal proceeding in 24
+                hours.
               </h3>
             </div>
             <div
