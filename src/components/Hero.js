@@ -6,7 +6,7 @@ import Logo from "./../assets/img/logo/logo-image.png";
 function Hero() {
   return (
     <div className="slider__area grey-bg slider__space slider__plr p-relative z-index fix">
-      {/* <div
+      <div
         className="slider__shape-top-1 d-none d-xl-block wow tpfadeLeft"
         data-wow-duration=".9s"
         data-wow-delay=".7s"
@@ -45,32 +45,53 @@ function Hero() {
           src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-4.png"
           alt=""
         />
-      </div> */}
-      {/* <div class="slider__shape-top-5 d-none d-xxl-block">
-        <img src="assets/img/slider/shape-5.png" alt="" />
-      </div> */}
-      {/* <div class="slider__shape-top-6 d-none d-lg-block">
-        <img src="assets/img/slider/shape-6.png" alt="" />
-      </div> */}
-      {/* <div class="slider__shape-top-7 d-none d-sm-block">
-        <img src="assets/img/slider/shape-7.png" alt="" />
-      </div> */}
-      {/* <div class="slider__shape-top-8">
-        <img src="assets/img/slider/shape-8.png" alt="" />
-      </div> */}
-      {/* <div class="slider__shape-top-9 d-none d-xl-block">
-        <img src="assets/img/slider/shape-9.png" alt="" />
-      </div> */}
-      {/* <div class="slider__shape-top-10">
-        <img src="assets/img/slider/shape-10.png" alt="" />
-      </div> */}
-      {/* <div class="slider__shape-top-11">
-        <img src="assets/img/slider/shape-11.png" alt="" />
-      </div> */}
+      </div>
+      <div class="slider__shape-top-5 d-none d-xxl-block">
+        <img
+          src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-5.png"
+          alt=""
+        />
+      </div>
+      <div class="slider__shape-top-6 d-none d-lg-block">
+        <img src="https://i.ibb.co/3F74B4c/6844401.png" alt="" />
+      </div>
+      <div class="slider__shape-top-7 d-none d-sm-block">
+        <img
+          src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-7.png"
+          alt=""
+        />
+      </div>
+      <div class="slider__shape-top-8">
+        <img
+          src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-8.png"
+          alt=""
+        />
+      </div>
+      <div class="slider__shape-top-9 d-none d-xl-block">
+        <img
+          src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-9.png"
+          alt=""
+        />
+      </div>
+      <div class="slider__shape-top-10">
+        <img
+          src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-10.png"
+          alt=""
+        />
+      </div>
+      <div class="slider__shape-top-11">
+        <img
+          src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-11.png"
+          alt=""
+        />
+      </div>
       <div className="container-fluid">
         <div className="row align-items-center justify-content-between">
           <div className="col-xl-6 col-lg-6">
             <div className="slider__section-box">
+              <h4 className="section-subtitle char-anim">
+                Settle Loan's Settle Life!
+              </h4>
               {/* <h4 class="section-subtitle char-anim">
                 Stop recovery calls in 24 hours.
               </h4> */}
@@ -78,6 +99,20 @@ function Hero() {
                 Stop your Bank harassment and start your Legal proceeding in 24
                 hours.
               </h3>
+            </div>
+            <div
+              className="slider__content wow tpfadeUp"
+              data-wow-duration=".9s"
+              data-wow-delay=".9s"
+            >
+              <p className="char-anim-2">
+                Settle Loans swiftly stops bank harassment and initiates legal
+                proceedings within 24 hours.
+                {/* Settle Loans provides fast and effective legal solutions for
+                consumers who are experiencing harassment from banks, taking
+                action within 24 hours to stop the harassment and pursue legal
+                proceedings. */}
+              </p>
             </div>
             <div
               className="slider__btn wow tpfadeUp mt-30"
@@ -88,7 +123,7 @@ function Hero() {
                 className="main-btn tp-btn-hover alt-color"
                 href="about-us.html"
               >
-                <span>Get Your Process Started Now</span>
+                <span>Stop Your Harrasment Now</span>
                 <b />
               </a>
             </div>
@@ -107,6 +142,7 @@ function Hero() {
                 Get Consultation
               </h3>
             </div>
+
             <div
               className="wow tpfadeUp"
               data-wow-duration=".9s"

@@ -33,16 +33,22 @@ function ServicesHome() {
           >
             <div className="service__item service__border-1 p-relative fix">
               <div className="service__shape">
-                <img src="assets/img/service/sv-item-shape-1.png" alt="" />
+                <img
+                  src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-item-shape-1.png"
+                  alt=""
+                />
               </div>
               <div className="service__icon-wrapper pb-25 p-relative">
                 <div className="service__icon-bg">
-                  <img src="assets/img/service/sv-icon-shape-1.png" alt="" />
+                  <img
+                    src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-icon-shape-1.png"
+                    alt=""
+                  />
                 </div>
                 <div className="service__inner-icon">
                   <span>
                     <a href="#">
-                      <i className="fal fa-plug" />
+                      <i className="fal fa-smile-plus" />
                     </a>
                   </span>
                 </div>
@@ -74,23 +80,29 @@ function ServicesHome() {
           >
             <div className="service__item service__border-2 p-relative fix">
               <div className="service__shape">
-                <img src="assets/img/service/sv-item-shape-2.png" alt="" />
+                <img
+                  src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-item-shape-2.png"
+                  alt=""
+                />
               </div>
               <div className="service__icon-wrapper pb-25 p-relative">
                 <div className="service__icon-bg">
-                  <img src="assets/img/service/sv-icon-shape-2.png" alt="" />
+                  <img
+                    src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-icon-shape-2.png"
+                    alt=""
+                  />
                 </div>
                 <div className="service__inner-icon">
                   <span>
                     <a href="#">
-                      <i className="fal fa-seedling" />
+                      <i className="fal fa-pray " />
                     </a>
                   </span>
                 </div>
               </div>
               <div className="service__content">
                 <h4 className="service__title title-color-2">
-                  <a href="service-details.html">Stop Recovery Agents </a>
+                  <a href="service-details.html">Stop Creditor Harassment </a>
                 </h4>
                 <p>
                   These actions are within the parameters of the RBI guidelines,
@@ -114,16 +126,22 @@ function ServicesHome() {
           >
             <div className="service__item service__border-3 p-relative fix">
               <div className="service__shape">
-                <img src="assets/img/service/sv-item-shape-3.png" alt="" />
+                <img
+                  src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-item-shape-3.png"
+                  alt=""
+                />
               </div>
               <div className="service__icon-wrapper pb-25 p-relative">
                 <div className="service__icon-bg">
-                  <img src="assets/img/service/sv-icon-shape-3.png" alt="" />
+                  <img
+                    src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-icon-shape-3.png"
+                    alt=""
+                  />
                 </div>
                 <div className="service__inner-icon">
                   <span>
                     <a href="#">
-                      <i className="fal fa-tv" />
+                      <i className="fal fa-handshake" />
                     </a>
                   </span>
                 </div>
@@ -154,11 +172,17 @@ function ServicesHome() {
           >
             <div className="service__item service__border-4 p-relative fix">
               <div className="service__shape">
-                <img src="assets/img/service/sv-item-shape-4.png" alt="" />
+                <img
+                  src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-item-shape-4.png"
+                  alt=""
+                />
               </div>
               <div className="service__icon-wrapper pb-25 p-relative">
                 <div className="service__icon-bg">
-                  <img src="assets/img/service/sv-icon-shape-4.png" alt="" />
+                  <img
+                    src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-icon-shape-4.png"
+                    alt=""
+                  />
                 </div>
                 <div className="service__inner-icon">
                   <span>
@@ -170,15 +194,13 @@ function ServicesHome() {
               </div>
               <div className="service__content">
                 <h4 className="service__title title-color-4">
-                  <a href="service-details.html">
-                    Alternative Dispute Resolution
-                  </a>
+                  <a href="service-details.html">Business Debt Solutions</a>
                 </h4>
                 <p>
-                  Methods of Alternative Dispute Resolution System the
-                  techniques or modes of ADR, though widely accepted all over
-                  the world, may vary from region to region. This fluctuation
-                  depends on the legal framework of a country.
+                  Covid's effects and the shutdown have forced several firms to
+                  deal with serious difficulties. Businesses that are operating
+                  in survival mode, dealing with disruptions in cash flow, and
+                  going bankrupt have increased significantly.
                 </p>
               </div>
               <div className="service__link service__link-color-4">
@@ -196,23 +218,29 @@ function ServicesHome() {
           >
             <div className="service__item service__border-5 p-relative fix">
               <div className="service__shape">
-                <img src="assets/img/service/sv-item-shape-5.png" alt="" />
+                <img
+                  src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-item-shape-5.png"
+                  alt=""
+                />
               </div>
               <div className="service__icon-wrapper pb-25 p-relative">
                 <div className="service__icon-bg">
-                  <img src="assets/img/service/sv-icon-shape-5.png" alt="" />
+                  <img
+                    src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-icon-shape-5.png"
+                    alt=""
+                  />
                 </div>
                 <div className="service__inner-icon">
                   <span>
                     <a href="#">
-                      <i className="fas fa-bullhorn" />
+                      <i className="fal fa-balance-scale" />
                     </a>
                   </span>
                 </div>
               </div>
               <div className="service__content">
                 <h4 className="service__title title-color-5">
-                  <a href="service-details.html">Legal Advisory </a>
+                  <a href="service-details.html">Legal / Financial Advisory </a>
                 </h4>
                 <p>
                   Our attorneys and CIBIL lawyers can provide legal notices,
@@ -236,27 +264,34 @@ function ServicesHome() {
           >
             <div className="service__item service__border-6 p-relative fix">
               <div className="service__shape">
-                <img src="assets/img/service/sv-item-shape-6.png" alt="" />
+                <img
+                  src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-item-shape-6.png"
+                  alt=""
+                />
               </div>
               <div className="service__icon-wrapper pb-25 p-relative">
                 <div className="service__icon-bg">
-                  <img src="assets/img/service/sv-icon-shape-6.png" alt="" />
+                  <img
+                    src="https://ordainit.com/Sorex/sorex/assets/img/service/sv-icon-shape-6.png"
+                    alt=""
+                  />
                 </div>
                 <div className="service__inner-icon">
                   <span>
                     <a href="#">
-                      <i className="fal fa-user-headset" />
+                      <i className="fal fa-landmark" />
                     </a>
                   </span>
                 </div>
               </div>
               <div className="service__content">
                 <h4 className="service__title title-color-6">
-                  <a href="service-details.html">Financial Advisory</a>
+                  <a href="service-details.html">CIBIL Building Programme</a>
                 </h4>
                 <p>
-                  Our financial advisors are knowledgeable in consumer debt and
-                  can provide all essential services
+                  CIBIL score or credit score is an important factor in your
+                  life therefore we help you to rebuild your cibil with time so
+                  that in future you dont face any problems
                 </p>
               </div>
               <div className="service__link service__link-color-6">

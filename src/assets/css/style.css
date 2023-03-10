@@ -1,7 +1,7 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&family=Saira:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet';
 :root {
-  --it-ff-body: "Poppins", sans-serif;
+  --it-ff-body: "Rubik", sans-serif;
   --it-ff-heading: "Poppins", sans-serif;
   --it-ff-fontawesome: Font Awesome 5 Pro;
   --it-common-white: #ffffff;
@@ -35,10 +35,10 @@
   --it-common-yellow-2: #fff1c9;
   --it-common-yellow-3: #fff3c8;
   --it-heading-primary: #232323;
-  --it-grey-1: #ffffff;
+  --it-grey-1: #fffcf3;
   --it-grey-2: #fafafa;
   --it-text-body: #636363;
-  --it-theme-1: #10b981;
+  --it-theme-1: #ffdc60;
   --it-border-1: #dddddd;
   --it-border-2: #595252;
 }
@@ -2589,7 +2589,7 @@ input[type="color"] {
   color: var(--it-common-black);
   margin-bottom: 15px;
   font-family: rubik, sans-serif;
-  background-color: rgba(138, 96, 255, 0.21);
+  background-color: rgba(255, 220, 96, 0.21);
   display: inline-block;
   padding: 10px 30px;
   border-radius: 30px;
@@ -2611,7 +2611,7 @@ input[type="color"] {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.3;
-  color: var(--it-common-white);
+  color: var(--it-common-black);
 }
 .section-title span {
   background-color: var(--it-theme-1);
@@ -2714,7 +2714,7 @@ input[type="color"] {
 }
 @media only screen and (min-width: 1400px) and (max-width: 1599px) {
   .hero-title {
-    font-size: 48px;
+    font-size: 54px;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -3043,7 +3043,7 @@ input[type="color"] {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #000000;
+  background-color: #fff;
   box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   width: 100%;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
@@ -3366,7 +3366,7 @@ input[type="color"] {
   display: inline-block;
   font-size: 14px;
   margin-left: 5px;
-  color: var(--it-common-white);
+  color: var(--it-common-black);
   font-weight: 400;
   transition: 0.3s;
 }
@@ -3401,7 +3401,7 @@ input[type="color"] {
   content: "";
   height: 2px;
   width: 0;
-  background-color: var(--it-common-white);
+  background-color: var(--it-common-black);
   position: absolute;
   bottom: 31px;
   left: 50%;
@@ -14387,13 +14387,15 @@ input[type="color"] {
 }
 .postbox__contact-input input {
   border: none;
-  background-color: transparent;
+  background-color: #f7f9fa;
   width: 100%;
   height: 45px;
   padding: 25px;
+  border-radius: 5px;
   font-weight: 400;
   font-size: 17px;
   margin-bottom: 30px;
+  border: 1px solid transparent;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .postbox__contact-input input {

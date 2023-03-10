@@ -1,7 +1,10 @@
 import React from "react";
+import Contact from "../components/Contact";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Manager from "../components/Manager";
+import NewB from "../components/NewB";
+import NewT from "../components/NewT";
 import SCFeed from "../components/SCFeed";
 import ServicesHome from "../components/ServicesHome";
 import SocialFeed from "../components/SocialFeed";
@@ -20,7 +23,7 @@ function Home() {
             <Manager />
             <Stats />
             <ServicesHome />
-            <Testimonials />
+            <Contact />
           </main>
         </div>
       </div>

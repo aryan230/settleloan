@@ -11,22 +11,6 @@ function Stats() {
       </div>
       <div className="counter__black-bg">
         <div className="container">
-          <div className="row justify-content-center">
-            <div
-              className="col-xl-8 wow tpfadeUp"
-              data-wow-duration=".9s"
-              data-wow-delay=".3s"
-            >
-              <div className="counter__section-box text-center pb-35">
-                <h4 className="section-subtitle section-white-bg title-anim">
-                  We Best Counter
-                </h4>
-                <h3 className="section-title text-white title-anim">
-                  Counter Industries server
-                </h3>
-              </div>
-            </div>
-          </div>
           <div className="row">
             <div
               className="col-xl-3 col-lg-6 col-md-6 mb-30 wow tpfadeUp"
@@ -81,7 +65,7 @@ function Stats() {
                 </div>
                 <div className="counter__icon">
                   <span>
-                    <i className="far fa-cogs" />
+                    <i className="far fa-hands-helping" />
                   </span>
                 </div>
                 <div className="counter__text">
@@ -102,7 +86,7 @@ function Stats() {
                 </div>
                 <div className="counter__icon">
                   <span>
-                    <i className="fal fa-envelope-open-text" />
+                    <i className="fal fa-money-check-edit-alt" />
                   </span>
                 </div>
                 <div className="counter__text">

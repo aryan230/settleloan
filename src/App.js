@@ -14,6 +14,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Screens/Home";
 import DebtFree from "./Screens/Services/DebtFree";
+import Footer from "./components/Footer";
 function App() {
   return (
     <div className="App">
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<Home />}></Route>
           <Route path="/debt-free-solutions" element={<DebtFree />}></Route>
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

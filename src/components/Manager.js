@@ -2,7 +2,7 @@ import React from "react";
 
 function Manager() {
   return (
-    <div class="feature__area feature__mlr pt-100 pb-70">
+    <div class="feature__area feature__mlr pt-30 pb-70">
       <div class="container-fluid">
         <div class="row justify-content-center">
           <div
@@ -14,7 +14,7 @@ function Manager() {
               <h4 class="section-subtitle title-anim">
                 You stay in control, we do the work for you.
               </h4>
-              <h3 class="section-title title-anim">
+              <h3 class="section-title title-anim pt-20 pb-20">
                 How Does Our 3-Step Program Work?
               </h3>
             </div>
@@ -28,12 +28,7 @@ function Manager() {
           >
             <div class="feature__item feature__color-1 text-center">
               <div class="feature__icon z-index">
-                <span>
-                  <img
-                    src="https://img.freepik.com/free-vector/businessman-chained-debts_3446-632.jpg?w=826&t=st=1678283596~exp=1678284196~hmac=dd10c619f6e192d5be7d8652b15135d5f8a5ba8eeecf70c9c828fd92eb45401a"
-                    alt=""
-                  />
-                </span>
+                <span className="feature_icon_span_number">1</span>
               </div>
               <div class="feature__content">
                 <h4 class="feature__title">
@@ -56,10 +51,7 @@ function Manager() {
             <div class="feature__item feature__color-2 text-center">
               <div class="feature__icon z-index">
                 <span>
-                  <img
-                    src="https://img.freepik.com/free-vector/two-men-shake-hands-with-each-other-isolated-white-background-meeting-greeting-friends-businessmen-deal-agreement-illustration-partnership-cooperation-communication_575670-2344.jpg?w=1060&t=st=1678283629~exp=1678284229~hmac=a7c53f553e1910dd0a0af9581a366bc392e14bf52375c2a786a2ed37cdf6993a"
-                    alt=""
-                  />
+                  <span className="feature_icon_span_number">2</span>
                 </span>
               </div>
               <div class="feature__content">
@@ -82,7 +74,7 @@ function Manager() {
             <div class="feature__item feature__color-3 text-center">
               <div class="feature__icon z-index">
                 <span>
-                  <img src="assets/img/feature/fea-2.png" alt="" />
+                  <span className="feature_icon_span_number">3</span>
                 </span>
               </div>
               <div class="feature__content">
