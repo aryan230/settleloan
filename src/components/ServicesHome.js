@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { GraphQLClient, gql } from "graphql-request";
+
+const graphcms = new GraphQLClient(
+  "https://api-ap-south-1.hygraph.com/v2/clf3jxqh547va01t7126u21j0/master"
+);
+
+const QUERY = gql`
+  {
+    services {
+      title
+      icon
+      slug
+      content {
+        html
+      }
+    }
+  }
+`;
 
 function ServicesHome() {
+  const [posts, setPosts] = useState();
+  const getPosts = async () => {
+    const { services } = await graphcms.request(QUERY);
+    console.log(services);
+    setPosts(services);
+  };
+  useEffect(() => {
+    if (!posts) {
+      getPosts();
+    }
+  }, [posts]);
   return (
     <div className="service__area service__space service__mlr grey-bg pt-195 pb-70 p-relative">
+      {posts &&
+        posts.map((post) => {
+          console.log(post);
+        })}
       <div className="service__shape-1">
         <img src="assets/img/service/sv-shape-1.png" alt="" />
       </div>
@@ -20,7 +53,7 @@ function ServicesHome() {
             <div className="service__section-box text-center pb-35">
               <h4 className="section-subtitle title-anim">Our Best Service</h4>
               <h3 className="section-title title-anim">
-                Experts in Every Aspect Service lifecscle
+                We are trusted by more than 5000 clients.
               </h3>
             </div>
           </div>

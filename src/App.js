@@ -17,14 +17,18 @@ import DebtFree from "./Screens/Services/DebtFree";
 import { Footer } from "./components/Footer";
 import { FooterTwo } from "./components/FooterTwo";
 import NotFound from "./Screens/404";
+import Whatsapp from "./Screens/Utils/Whatsapp";
+import ServiceSlug from "./Screens/Services/ServiceSlug";
 function App() {
   return (
     <div className="App">
       <Router>
+        <Whatsapp />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/debt-free-solutions" element={<DebtFree />}></Route>
           <Route path="*" element={<NotFound />}></Route>
+          <Route path="/service/:slug" element={<ServiceSlug />}></Route>
         </Routes>
         <FooterTwo />
       </Router>

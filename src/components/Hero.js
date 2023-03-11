@@ -101,7 +101,7 @@ function Hero() {
               </h3>
             </div>
             <div
-              className="slider__content wow tpfadeUp"
+              className="slider__content wow"
               data-wow-duration=".9s"
               data-wow-delay=".9s"
             >
@@ -115,7 +115,7 @@ function Hero() {
               </p>
             </div>
             <div
-              className="slider__btn wow tpfadeUp mt-30"
+              className="slider__btn wow  mt-30"
               data-wow-duration=".9s"
               data-wow-delay="1.1s"
             >
@@ -129,7 +129,7 @@ function Hero() {
             </div>
           </div>
           <div
-            className="col-xl-4 col-lg-4 wow tpfadeRight somevalue glass-form-effect-2"
+            className="col-xl-4 col-lg-4 wow somevalue glass-form-effect-2"
             data-wow-duration=".9s"
             data-wow-delay=".7s"
           >
@@ -182,7 +182,7 @@ function Hero() {
                       </div>
                     </div>
                     <div
-                      className="contact__button wow tpfadeUp pt-20"
+                      className="contact__button wow pt-20"
                       data-wow-duration=".9s"
                       data-wow-delay="1.1s"
                     >

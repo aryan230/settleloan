@@ -6,6 +6,7 @@ import Manager from "../components/Manager";
 import NewB from "../components/NewB";
 import NewT from "../components/NewT";
 import SCFeed from "../components/SCFeed";
+import ServicesGraph from "../components/ServicesGraph";
 import ServicesHome from "../components/ServicesHome";
 import SocialFeed from "../components/SocialFeed";
 import Stats from "../components/Stats";
@@ -22,7 +23,7 @@ function Home() {
             <SCFeed />
             <Manager />
             <Stats />
-            <ServicesHome />
+            <ServicesGraph />
             <NewT />
             <Contact />
           </main>
