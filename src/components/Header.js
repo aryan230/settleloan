@@ -1,7 +1,41 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "./../assets/img/logo/logo.png";
+import { GraphQLClient, gql } from "graphql-request";
+
+const graphcms = new GraphQLClient(
+  "https://api-ap-south-1.hygraph.com/v2/clf3jxqh547va01t7126u21j0/master"
+);
+
+const QUERY = gql`
+  {
+    services {
+      title
+      icon
+      slug
+      des
+      coverPhoto {
+        url
+      }
+      content {
+        html
+      }
+    }
+  }
+`;
+
 function Header() {
+  const [posts, setPosts] = useState();
+  const getPosts = async () => {
+    const { services } = await graphcms.request(QUERY);
+    console.log(services);
+    setPosts(services);
+  };
+  useEffect(() => {
+    if (!posts) {
+      getPosts();
+    }
+  }, [posts]);
   return (
     <>
       <header>
@@ -31,7 +65,13 @@ function Header() {
                       <li className="has-dropdown">
                         <a href="service-details.html">Service's</a>
                         <ul className="submenu">
-                          <li>
+                          {posts &&
+                            posts.map((s) => (
+                              <li>
+                                <Link to={`/service/${s.slug}`}>{s.title}</Link>
+                              </li>
+                            ))}
+                          {/* <li>
                             <a href="service-1.html">Service 01</a>
                           </li>
                           <li>
@@ -42,7 +82,7 @@ function Header() {
                           </li>
                           <li>
                             <a href="service-details.html">Service Details</a>
-                          </li>
+                          </li> */}
                         </ul>
                       </li>
                       <li>
@@ -50,7 +90,7 @@ function Header() {
                       </li>
 
                       <li>
-                        <a href="contact.html">Contact</a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </nav>

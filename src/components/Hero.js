@@ -4,7 +4,7 @@ import shape2 from "./../assets/img/slider/m2.png";
 import shape3 from "./../assets/img/slider/m3.png";
 import Logo from "./../assets/img/logo/logo-image.png";
 import { addDoc, collection } from "firebase/firestore";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { db } from "../firebase";
 import PELoader from "../Screens/Utils/PELoader";
 function Hero() {
@@ -77,12 +77,12 @@ function Hero() {
           alt=""
         />
       </div>
-      <div class="slider__shape-top-5 d-none d-xxl-block">
+      {/* <div class="slider__shape-top-5 d-none d-xxl-block">
         <img
           src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-5.png"
           alt=""
         />
-      </div>
+      </div> */}
       <div class="slider__shape-top-6 d-none d-lg-block">
         <img src="https://i.ibb.co/3F74B4c/6844401.png" alt="" />
       </div>
@@ -92,12 +92,12 @@ function Hero() {
           alt=""
         />
       </div>
-      <div class="slider__shape-top-8">
+      {/* <div class="slider__shape-top-8">
         <img
           src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-8.png"
           alt=""
         />
-      </div>
+      </div> */}
       <div class="slider__shape-top-9 d-none d-xl-block">
         <img
           src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-9.png"
@@ -110,12 +110,12 @@ function Hero() {
           alt=""
         />
       </div>
-      <div class="slider__shape-top-11">
+      {/* <div class="slider__shape-top-11">
         <img
           src="https://ordainit.com/Sorex/sorex/assets/img/slider/shape-11.png"
           alt=""
         />
-      </div>
+      </div> */}
       <div className="container-fluid">
         <div className="row align-items-center justify-content-between">
           <div className="col-xl-6 col-lg-6">
@@ -150,13 +150,10 @@ function Hero() {
               data-wow-duration=".9s"
               data-wow-delay="1.1s"
             >
-              <a
-                className="main-btn tp-btn-hover alt-color"
-                href="about-us.html"
-              >
+              <Link className="main-btn tp-btn-hover alt-color" to="/contact">
                 <span>Stop Your Harrasment Now</span>
                 <b />
-              </a>
+              </Link>
             </div>
           </div>
           <div

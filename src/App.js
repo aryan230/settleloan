@@ -24,6 +24,8 @@ import Data from "./Screens/Admin/Data";
 import HomeForm from "./Screens/Admin/HomeForm";
 import ContactForm from "./Screens/Admin/ContactForm";
 import Login from "./Screens/Admin/Login";
+import ContactScreen from "./Screens/ContactScreen";
+import About from "./Screens/About";
 function App() {
   return (
     <div className="App">
@@ -31,6 +33,8 @@ function App() {
         <Whatsapp />
         <Routes>
           <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<ContactScreen />}></Route>
           <Route path="/debt-free-solutions" element={<DebtFree />}></Route>
           <Route path="*" element={<NotFound />}></Route>
           <Route path="/service/:slug" element={<ServiceSlug />}></Route>

@@ -1,4 +1,39 @@
+import { GraphQLClient, gql } from "graphql-request";
+import { useEffect, useState } from "react";
+
+const graphcms = new GraphQLClient(
+  "https://api-ap-south-1.hygraph.com/v2/clf3jxqh547va01t7126u21j0/master"
+);
+
+const QUERY = gql`
+  {
+    services {
+      title
+      icon
+      slug
+      des
+      coverPhoto {
+        url
+      }
+      content {
+        html
+      }
+    }
+  }
+`;
+
 export const FooterTwo = () => {
+  const [posts, setPosts] = useState();
+  const getPosts = async () => {
+    const { services } = await graphcms.request(QUERY);
+    console.log(services);
+    setPosts(services);
+  };
+  useEffect(() => {
+    if (!posts) {
+      getPosts();
+    }
+  }, [posts]);
   return (
     <div className="relative mt-16 bg-stone-900">
       <svg
@@ -32,173 +67,113 @@ export const FooterTwo = () => {
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
+              <p className="font-semibold tracking-wide text-yellow-400">
                 Services
               </p>
               <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    News
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    World
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Games
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    References
-                  </a>
-                </li>
+                {posts &&
+                  posts.map((p) => (
+                    <li>
+                      <a
+                        href="/"
+                        className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
+                      >
+                        {p.title}
+                      </a>
+                    </li>
+                  ))}
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Cherry
+              <p className="font-semibold tracking-wide text-yellow-400">
+                Legal
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Web
+                    Terms & Conditions
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    eCommerce
+                    Privacy Policy
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Business
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Entertainment
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Portfolio
+                    FAQ
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Apples
+              <p className="font-semibold tracking-wide text-yellow-400">
+                Our Offices
               </p>
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Media
+                    Delhi
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Brochure
+                    Noida
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Nonprofit
+                    Gurugram
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Educational
+                    Pune
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Projects
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Business
-              </p>
-              <ul className="mt-2 space-y-2">
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Infopreneur
+                    Mumabi
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Personal
+                    Chennai
                   </a>
                 </li>
                 <li>
                   <a
                     href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
+                    className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Wiki
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/"
-                    className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
-                  >
-                    Forum
+                    Banglore
                   </a>
                 </li>
               </ul>
