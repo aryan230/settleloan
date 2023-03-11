@@ -90,7 +90,7 @@ function Hero() {
           <div className="col-xl-6 col-lg-6">
             <div className="slider__section-box">
               <h4 className="section-subtitle char-anim">
-                Settle Loan's Settle Life!
+                Settle Loan's, Settle Life!
               </h4>
               {/* <h4 class="section-subtitle char-anim">
                 Stop recovery calls in 24 hours.
@@ -133,51 +133,69 @@ function Hero() {
             data-wow-duration=".9s"
             data-wow-delay=".7s"
           >
+            <h3>Get Consultation</h3>
             <div className="contact__section-title pb-10">
-              <h3
-                className="section-title char-anim wow tpfadeUp"
-                data-wow-duration=".9s"
-                data-wow-delay=".5s"
-              >
-                Get Consultation
-              </h3>
+              <div className="form-div-hero">
+                <form action="#" className="glass_form">
+                  <div className="row">
+                    <div className="col-sm-6">
+                      <div className="postbox__contact-input">
+                        <input type="text" placeholder="Your Name" />
+                      </div>
+                    </div>
+                    <div className="col-sm-6">
+                      <div className="postbox__contact-input">
+                        <input type="email" placeholder="Your Number" />
+                      </div>
+                    </div>
+                    <div className="col-sm-12">
+                      <div className="postbox__contact-input">
+                        <input type="text" placeholder="Your email" />
+                      </div>
+                    </div>
+
+                    <div className="col-sm-12">
+                      <div className="postbox__contact-input">
+                        <input type="email" placeholder="Total Debt Amount" />
+                      </div>
+                    </div>
+                    <div className="col-sm-12">
+                      <label htmlFor="" className="are-you-facing">
+                        Are you facing harassment by recovery agent / banks ?
+                      </label>
+                      <div className="wrapper">
+                        <input
+                          type="radio"
+                          name="select"
+                          id="option-1"
+                          defaultChecked
+                        />
+                        <input type="radio" name="select" id="option-2" />
+                        <label htmlFor="option-1" className="option option-1">
+                          <div className="dot" />
+                          <span>Yes</span>
+                        </label>
+                        <label htmlFor="option-2" className="option option-2">
+                          <div className="dot" />
+                          <span>No</span>
+                        </label>
+                      </div>
+                    </div>
+                    <div
+                      className="contact__button wow tpfadeUp pt-20"
+                      data-wow-duration=".9s"
+                      data-wow-delay="1.1s"
+                    >
+                      <button className="main-btn-sm tp-btn-hover alt-color">
+                        <span>Send Request</span>
+                        <b />
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
 
-            <div
-              className="wow tpfadeUp"
-              data-wow-duration=".9s"
-              data-wow-delay=".9s"
-            >
-              <form action="#" className="">
-                <div className="row">
-                  {/* <div className="col-sm-6">
-                    <div className="postbox__contact-input">
-                      <input type="text" placeholder="Your Name" />
-                    </div>
-                  </div>
-                  <div className="col-sm-6">
-                    <div className="postbox__contact-input">
-                      <input type="email" placeholder="Your Mobile" />
-                    </div>
-                  </div>
-                  <div className="col-sm-12">
-                    <div className="postbox__contact-input">
-                      <input type="text" placeholder="Your Email" />
-                    </div>
-                  </div>
-                  <div className="col-sm-12">
-                    <div className="postbox__contact-input">
-                      <input type="text" placeholder="City" />
-                    </div>
-                  </div>
-                  <div className="col-sm-12">
-                    <div className="postbox__contact-input">
-                      <input type="text" placeholder="Zip Code" />
-                    </div>
-                  </div> */}
-                </div>
-              </form>
-            </div>
             <div
               className="contact__button wow tpfadeUp"
               data-wow-duration=".9s"

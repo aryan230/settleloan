@@ -99,9 +99,8 @@ function Contact() {
                   <div className="contact__content">
                     <h4 className="contact__title-sm">Call This Now</h4>
                     <span>
-                      <a href="tel:+025461556695">
-                        +025461556695 <br />
-                        +826542556455
+                      <a href="tel:+919821219819">
+                        +919821219819 <br />
                       </a>
                     </span>
                   </div>
@@ -126,15 +125,15 @@ function Contact() {
                           className="__cf_email__"
                           data-cfemail="ea8b878b98aa878b8386c4898587"
                         >
-                          [email&nbsp;protected]
+                          info@settleloans.in
                         </span>
-                        <br />
+                        {/* <br />
                         <span
                           className="__cf_email__"
                           data-cfemail="186a777a715875797174367b7775"
                         >
-                          [email&nbsp;protected]
-                        </span>
+                          legal@settleloans.in
+                        </span> */}
                       </a>
                     </span>
                   </div>
@@ -154,10 +153,7 @@ function Contact() {
                   <div className="contact__content">
                     <h4 className="contact__title-sm">Your location</h4>
                     <span>
-                      <a href="tel:+025461556695">
-                        +025461556695 <br />
-                        +826542556455
-                      </a>
+                      <a href="">PAN India</a>
                     </span>
                   </div>
                 </div>

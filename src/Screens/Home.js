@@ -23,6 +23,7 @@ function Home() {
             <Manager />
             <Stats />
             <ServicesHome />
+            <NewT />
             <Contact />
           </main>
         </div>
