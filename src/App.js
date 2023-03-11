@@ -20,6 +20,10 @@ import NotFound from "./Screens/404";
 import Whatsapp from "./Screens/Utils/Whatsapp";
 import ServiceSlug from "./Screens/Services/ServiceSlug";
 import Thanks from "./Screens/Thanks";
+import Data from "./Screens/Admin/Data";
+import HomeForm from "./Screens/Admin/HomeForm";
+import ContactForm from "./Screens/Admin/ContactForm";
+import Login from "./Screens/Admin/Login";
 function App() {
   return (
     <div className="App">
@@ -31,6 +35,10 @@ function App() {
           <Route path="*" element={<NotFound />}></Route>
           <Route path="/service/:slug" element={<ServiceSlug />}></Route>
           <Route element={<Thanks />} path="/thanks/:formId"></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/admin" element={<Data />}></Route>
+          <Route path="/admin/home" element={<HomeForm />}></Route>
+          <Route path="/admin/contact" element={<ContactForm />}></Route>
         </Routes>
         <FooterTwo />
       </Router>
