@@ -26,6 +26,7 @@ const QUERY = gql`
 
 function Header() {
   const [posts, setPosts] = useState();
+  const [sideBar, setSidebar] = useState(false);
   const getPosts = async () => {
     const { services } = await graphcms.request(QUERY);
     console.log(services);
@@ -36,6 +37,14 @@ function Header() {
       getPosts();
     }
   }, [posts]);
+  const changeSideBar = (e) => {
+    e.preventDefault();
+    if (!sideBar) {
+      setSidebar(true);
+    } else {
+      setSidebar(false);
+    }
+  };
   return (
     <>
       <header>
@@ -98,15 +107,13 @@ function Header() {
               </div>
               <div className="col-xl-3 col-lg-2 col-5 col-md-6">
                 <div className="header__action d-flex justify-content-end">
-                  <a
-                    className="main-btn-sm d-none d-xl-block tp-btn-hover alt-color"
-                    href="contact.html"
-                  >
-                    <span>Get A Quote</span>
+                  <a className="header__get__whatsapp" href="contact.html">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                    <span>Message Us</span>
                     <b />
                   </a>
                   <div className="header__menu-bar">
-                    <button className="it-menu-bar">
+                    <button className="it-menu-bar" onClick={changeSideBar}>
                       <i className="far fa-bars" />
                     </button>
                   </div>
@@ -117,12 +124,12 @@ function Header() {
         </div>
       </header>
       <div className="it-offcanvas-area">
-        <div className="itoffcanvas">
+        <div className={sideBar ? `itoffcanvas opened` : `itoffcanvas`}>
           <div className="it-offcanva-bottom-shape d-none d-xxl-block">
             <img src="assets/img/offcanvas/offcanvas-shape-1.jpg" alt="" />
           </div>
           <div className="itoffcanvas__close-btn">
-            <button className="close-btn">
+            <button className="close-btn" onClick={changeSideBar}>
               <i className="fal fa-times" />
             </button>
           </div>
@@ -133,8 +140,8 @@ function Header() {
           </div>
           <div className="itoffcanvas__text">
             <p>
-              Suspendisse interdum consectetur libero id. Fermentum leo vel orci
-              porta non. Euismod viverra nibh cras pulvinar suspen.
+              Settle Loans swiftly stops bank harassment and initiates legal
+              proceedings within 24 hours.
             </p>
           </div>
           <div className="mobile-menu mean-container" />
@@ -153,7 +160,7 @@ function Header() {
                     className="__cf_email__"
                     data-cfemail="a9c1ccc5c5c6e9d0c6dcdbc4c8c0c587cac6c4"
                   >
-                    [email&nbsp;protected]
+                    info@settleloans.in
                   </span>
                 </a>
               </div>
@@ -166,7 +173,7 @@ function Header() {
               </div>
               <div className="itoffcanvas__info-address">
                 <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+                <a href="tel:+919821219819">+919821219819</a>
               </div>
             </div>
             <div className="it-info-wrapper mb-20 d-flex align-items-center">
@@ -181,7 +188,7 @@ function Header() {
                   href="htits://www.google.com/maps/@37.4801311,22.8928877,3z"
                   target="_blank"
                 >
-                  Riverside 255, San Francisco, USA
+                  PAN India
                 </a>
               </div>
             </div>
@@ -189,7 +196,7 @@ function Header() {
           <div className="itoffcanvas__social">
             <div className="social-icon">
               <a href="#">
-                <i className="fab fa-twitter" />
+                <i className="fab fa-linkedin" />
               </a>
               <a href="#">
                 <i className="fab fa-instagram" />
@@ -198,13 +205,13 @@ function Header() {
                 <i className="fab fa-facebook-square" />
               </a>
               <a href="#">
-                <i className="fab fa-dribbble" />
+                <i className="fab fa-youtube" />
               </a>
             </div>
           </div>
         </div>
       </div>
-      <div className="body-overlay" />
+      <div className={sideBar ? `body-overlay apply` : `body-overlay`} />
     </>
   );
 }

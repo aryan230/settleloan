@@ -157,7 +157,7 @@ export const FooterTwo = () => {
                     href="/"
                     className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
-                    Mumabi
+                    Mumbai
                   </a>
                 </li>
                 <li>

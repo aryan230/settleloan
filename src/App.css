@@ -330,6 +330,42 @@ section .section-title {
   z-index: 999;
 }
 
+.header__get__whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-right: 15px;
+  color: #fff;
+  background-color: #25d366;
+  border-radius: 10px;
+  z-index: 100;
+  font-family: Arial;
+  font-size: 17px;
+  animation: whatsapp-animation 0.5s ease-in-out;
+  box-shadow: 1px 2px 5px 2px rgba(30, 30, 30, 0.3);
+  transition: all 0.3s ease-out;
+}
+@media only screen and (max-width: 600px) {
+  .header__get__whatsapp {
+    display: none;
+  }
+}
+
+.header__get__whatsapp:hover {
+  color: white;
+  transform: scale(1.1);
+}
+.header__get__whatsapp span {
+  margin-left: 5px;
+}
+
+.fa-whatsapp {
+  font-size: 20px !important;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
 .main-wrapper {
   display: flex;
   flex-direction: column;

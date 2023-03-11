@@ -30,7 +30,6 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Whatsapp />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
