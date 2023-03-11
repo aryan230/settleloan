@@ -107,9 +107,14 @@ function Header() {
               </div>
               <div className="col-xl-3 col-lg-2 col-5 col-md-6">
                 <div className="header__action d-flex justify-content-end">
-                  <a className="header__get__whatsapp" href="contact.html">
+                  <a
+                    className="header__get__whatsapp"
+                    href="https://wa.me/919821219819?text="
+                    target="_blank"
+                  >
                     <svg
                       fill="#ffffff"
+                      className="mx-2"
                       height="20px"
                       width="20px"
                       version="1.1"
