@@ -1,8 +1,34 @@
-import React from "react";
+import { addDoc, collection } from "firebase/firestore";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import { db } from "../firebase";
+import PELoader from "../Screens/Utils/PELoader";
 
 function Contact() {
+  const navigate = useNavigate();
+  const [name, setName] = useState();
+  const [email, setEmail] = useState();
+  const [message, setMessage] = useState();
+  const [loader, setLoader] = useState(false);
+  const collRef = collection(db, "contact-form");
+  const formSubmitHandler = async (e) => {
+    e.preventDefault();
+    setLoader(true);
+    const docRef = await addDoc(collRef, {
+      name,
+      email,
+      message,
+    });
+    window.setTimeout(() => {
+      setLoader(false);
+      localStorage.setItem("formName", name);
+      navigate(`/thanks/${docRef.id}`);
+      console.log("Document written with ID: ", docRef.id);
+    }, 3000);
+  };
   return (
     <div className="contact__area contact__plr-2 mt-100 mb-100 p-relative fix">
+      {loader && <PELoader />}
       <div className="contact__shape-1 d-none d-lg-block">
         <img src="assets/img/contact/ct-shape-1.png" alt="" />
       </div>
@@ -51,35 +77,59 @@ function Contact() {
                 data-wow-duration=".9s"
                 data-wow-delay=".9s"
               >
-                <form action="#">
+                <form onSubmit={formSubmitHandler}>
                   <div className="row">
                     <div className="col-sm-6">
                       <div className="postbox__contact-input">
-                        <input type="text" placeholder="Your Name" />
+                        <input
+                          type="text"
+                          placeholder="Your Name"
+                          onChange={(e) => {
+                            setName(e.target.value);
+                          }}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-sm-6">
                       <div className="postbox__contact-input">
-                        <input type="email" placeholder="Your Email" />
+                        <input
+                          type="email"
+                          placeholder="Your Email"
+                          onChange={(e) => {
+                            setEmail(e.target.value);
+                          }}
+                          required
+                        />
                       </div>
                     </div>
                     <div className="col-sm-12">
                       <div className="postbox__contact-textarea">
-                        <textarea placeholder="Message" defaultValue={""} />
+                        <textarea
+                          placeholder="Message"
+                          defaultValue={""}
+                          onChange={(e) => {
+                            setMessage(e.target.value);
+                          }}
+                          required
+                        />
                       </div>
                     </div>
                   </div>
+                  <div
+                    className="contact__button wow tpfadeUp pt-50"
+                    data-wow-duration=".9s"
+                    data-wow-delay="1.1s"
+                  >
+                    <button
+                      className="main-btn-sm tp-btn-hover alt-color"
+                      type="submit"
+                    >
+                      <span>Send Request</span>
+                      <b />
+                    </button>
+                  </div>
                 </form>
-              </div>
-              <div
-                className="contact__button wow tpfadeUp"
-                data-wow-duration=".9s"
-                data-wow-delay="1.1s"
-              >
-                <button className="main-btn-sm tp-btn-hover alt-color">
-                  <span>Send Request</span>
-                  <b />
-                </button>
               </div>
             </div>
             <div className="col-xl-4 col-lg-5">

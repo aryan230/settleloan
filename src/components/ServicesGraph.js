@@ -13,6 +13,9 @@ const QUERY = gql`
       icon
       slug
       des
+      coverPhoto {
+        url
+      }
       content {
         html
       }

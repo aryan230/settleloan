@@ -19,6 +19,7 @@ import { FooterTwo } from "./components/FooterTwo";
 import NotFound from "./Screens/404";
 import Whatsapp from "./Screens/Utils/Whatsapp";
 import ServiceSlug from "./Screens/Services/ServiceSlug";
+import Thanks from "./Screens/Thanks";
 function App() {
   return (
     <div className="App">
@@ -29,6 +30,7 @@ function App() {
           <Route path="/debt-free-solutions" element={<DebtFree />}></Route>
           <Route path="*" element={<NotFound />}></Route>
           <Route path="/service/:slug" element={<ServiceSlug />}></Route>
+          <Route element={<Thanks />} path="/thanks/:formId"></Route>
         </Routes>
         <FooterTwo />
       </Router>

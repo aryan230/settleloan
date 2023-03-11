@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import shape1 from "./../assets/img/slider/m1.png";
 import shape2 from "./../assets/img/slider/m2.png";
 import shape3 from "./../assets/img/slider/m3.png";
 import Logo from "./../assets/img/logo/logo-image.png";
+import { addDoc, collection } from "firebase/firestore";
+import { useNavigate } from "react-router-dom";
+import { db } from "../firebase";
+import PELoader from "../Screens/Utils/PELoader";
 function Hero() {
+  const navigate = useNavigate();
+  const [name, setName] = useState();
+  const [number, setNumber] = useState();
+  const [email, setEmail] = useState();
+  const [debtAmount, setDebtAmount] = useState();
+  const [areYouFacing, setAreYouFacing] = useState("option-1");
+  const [loader, setLoader] = useState(false);
+  const collRef = collection(db, "home-form");
+  const formSubmitHandler = async (e) => {
+    e.preventDefault();
+    setLoader(true);
+
+    const docRef = await addDoc(collRef, {
+      name,
+      number,
+      email,
+      debtAmount,
+      areYouFacing,
+    });
+    window.setTimeout(() => {
+      setLoader(false);
+      localStorage.setItem("formName", name);
+      navigate(`/thanks/${docRef.id}`);
+      console.log("Document written with ID: ", docRef.id);
+    }, 3000);
+  };
   return (
     <div className="slider__area grey-bg slider__space slider__plr p-relative z-index fix">
+      {loader && <PELoader />}
       <div
         className="slider__shape-top-1 d-none d-xl-block wow tpfadeLeft"
         data-wow-duration=".9s"
@@ -136,27 +167,49 @@ function Hero() {
             <h3>Get Consultation</h3>
             <div className="contact__section-title pb-10">
               <div className="form-div-hero">
-                <form action="#" className="glass_form">
+                <form onSubmit={formSubmitHandler} className="glass_form">
                   <div className="row">
                     <div className="col-sm-6">
                       <div className="postbox__contact-input">
-                        <input type="text" placeholder="Your Name" />
+                        <input
+                          type="text"
+                          placeholder="Your Name"
+                          required
+                          onChange={(e) => {
+                            setName(e.target.value);
+                          }}
+                        />
                       </div>
                     </div>
                     <div className="col-sm-6">
                       <div className="postbox__contact-input">
-                        <input type="email" placeholder="Your Number" />
+                        <input
+                          type="text"
+                          placeholder="Your Number"
+                          required
+                          onChange={(e) => setNumber(e.target.value)}
+                        />
                       </div>
                     </div>
                     <div className="col-sm-12">
                       <div className="postbox__contact-input">
-                        <input type="text" placeholder="Your email" />
+                        <input
+                          type="text"
+                          placeholder="Your email"
+                          required
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
                       </div>
                     </div>
 
                     <div className="col-sm-12">
                       <div className="postbox__contact-input">
-                        <input type="email" placeholder="Total Debt Amount" />
+                        <input
+                          type="number"
+                          placeholder="Total Debt Amount"
+                          required
+                          onChange={(e) => setDebtAmount(e.target.value)}
+                        />
                       </div>
                     </div>
                     <div className="col-sm-12">
@@ -168,9 +221,21 @@ function Hero() {
                           type="radio"
                           name="select"
                           id="option-1"
+                          value="yes"
+                          onChange={(e) => {
+                            setAreYouFacing(e.target.id);
+                          }}
                           defaultChecked
                         />
-                        <input type="radio" name="select" id="option-2" />
+                        <input
+                          type="radio"
+                          name="select"
+                          value="no"
+                          id="option-2"
+                          onChange={(e) => {
+                            setAreYouFacing(e.target.id);
+                          }}
+                        />
                         <label htmlFor="option-1" className="option option-1">
                           <div className="dot" />
                           <span>Yes</span>
@@ -186,7 +251,10 @@ function Hero() {
                       data-wow-duration=".9s"
                       data-wow-delay="1.1s"
                     >
-                      <button className="main-btn-sm tp-btn-hover alt-color">
+                      <button
+                        className="main-btn-sm tp-btn-hover alt-color"
+                        type="submit"
+                      >
                         <span>Send Request</span>
                         <b />
                       </button>

@@ -14,6 +14,9 @@ const QUERY = gql`
       id
       title
       slug
+      coverPhoto {
+        url
+      }
       content {
         html
       }
