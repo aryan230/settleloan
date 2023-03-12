@@ -1,5 +1,6 @@
 import { GraphQLClient, gql } from "graphql-request";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const graphcms = new GraphQLClient(
   "https://api-ap-south-1.hygraph.com/v2/clf3jxqh547va01t7126u21j0/master"
@@ -74,12 +75,12 @@ export const FooterTwo = () => {
                 {posts &&
                   posts.map((p) => (
                     <li>
-                      <a
-                        href="/"
+                      <Link
+                        to={`/service/${p.slug}`}
                         className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                       >
                         {p.title}
-                      </a>
+                      </Link>
                     </li>
                   ))}
               </ul>

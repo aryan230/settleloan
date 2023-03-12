@@ -26,6 +26,8 @@ import ContactForm from "./Screens/Admin/ContactForm";
 import Login from "./Screens/Admin/Login";
 import ContactScreen from "./Screens/ContactScreen";
 import About from "./Screens/About";
+import Blogs from "./Screens/Blogs/Blogs";
+import BlogSlug from "./Screens/Blogs/BlogSlug";
 function App() {
   return (
     <div className="App">
@@ -36,6 +38,8 @@ function App() {
           <Route path="/contact" element={<ContactScreen />}></Route>
           <Route path="/debt-free-solutions" element={<DebtFree />}></Route>
           <Route path="*" element={<NotFound />}></Route>
+          <Route path="/blogs" element={<Blogs />}></Route>
+          <Route path="/blog/:slug" element={<BlogSlug />}></Route>
           <Route path="/service/:slug" element={<ServiceSlug />}></Route>
           <Route element={<Thanks />} path="/thanks/:formId"></Route>
           <Route path="/login" element={<Login />}></Route>
