@@ -17,8 +17,8 @@ function NewT() {
             <div className="carousel-item active relative float-left w-full">
               <div className="flex flex-wrap justify-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-                  <h5 className="text-lg font-bold mb-3">Maria Kate</h5>
-                  <p className="font-medium text-gray-700 mb-4">Photographer</p>
+                  <h5 className="text-lg font-bold mb-3">Shrikant </h5>
+                  {/* <p className="font-medium text-gray-700 mb-4">Photographer</p> */}
                   <p className="text-gray-500 mb-6">
                     <svg
                       aria-hidden="true"
@@ -35,12 +35,11 @@ function NewT() {
                         d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
                       ></path>
                     </svg>
-                    In ac turpis justo. Vivamus auctor quam vitae odio feugiat
-                    pulvinar. Sed semper ligula sed lorem tincidunt dignissim.
-                    Nam sed cursus lectus. Proin non rutrum magna. Proin
-                    gravida, justo et imperdiet tristique, turpis nisi viverra
-                    est, nec posuere ex arcu sit amet erat. Sed a dictum sem.
-                    Duis pretium condimentum nulla.
+                    Settleloans provided excellent service. They assisted
+                    customers who were unable to repay their loans for various
+                    reasons. Please advise those persons who are unable to repay
+                    their loans to use the services of settleloans in order to
+                    avoid the agony of the bank.
                   </p>
                   <ul className="flex justify-center mb-0">
                     <li>
@@ -133,18 +132,10 @@ function NewT() {
               </div>
             </div>
             <div className="carousel-item relative float-left w-full">
-              <img
-                className="rounded-full shadow-lg mb-6 mx-auto"
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(32).jpg"
-                alt="avatar"
-                style={{ width: "150px" }}
-              />
               <div className="flex flex-wrap justify-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-                  <h5 className="text-lg font-bold mb-3">John Doe</h5>
-                  <p className="font-medium text-gray-700 mb-4">
-                    Web Developer
-                  </p>
+                  <h5 className="text-lg font-bold mb-3">Rajkumar singh</h5>
+
                   <p className="text-gray-500 mb-6">
                     <svg
                       aria-hidden="true"
@@ -161,10 +152,10 @@ function NewT() {
                         d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
                       ></path>
                     </svg>
-                    Maecenas auctor, quam eget tincidunt pretium, felis diam
-                    semper turpis, sed scelerisque diam libero facilisis libero.
-                    Quisque vitae semper metus. Aliquam eu dui aliquam, faucibus
-                    metus quis, elementum nunc.
+                    I recommend SettleLoans to anyone that needs help to get out
+                    of debt. I was being harasses by recovery agents for 3
+                    months and settleloans came to rescue me they have the best
+                    solution to get you out of the debts.
                   </p>
                   <ul className="flex justify-center mb-0">
                     <li>
@@ -257,16 +248,10 @@ function NewT() {
               </div>
             </div>
             <div className="carousel-item relative float-left w-full">
-              <img
-                className="rounded-full shadow-lg mb-6 mx-auto"
-                src="https://mdbootstrap.com/img/Photos/Avatars/img%20(1).jpg"
-                alt="avatar"
-                style={{ width: "150px" }}
-              />
               <div className="flex flex-wrap justify-center">
                 <div className="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-                  <h5 className="text-lg font-bold mb-3">Anna Deynah</h5>
-                  <p className="font-medium text-gray-700 mb-4">UX Designer</p>
+                  <h5 className="text-lg font-bold mb-3">Tanya Kapur</h5>
+
                   <p className="text-gray-500 mb-6">
                     <svg
                       aria-hidden="true"
@@ -283,10 +268,11 @@ function NewT() {
                         d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z"
                       ></path>
                     </svg>
-                    Duis sagittis, turpis in ullamcorper venenatis, ligula nibh
-                    porta dui, sit amet rutrum enim massa in ante. Curabitur in
-                    justo at lorem laoreet ultricies. Nunc ligula felis,
-                    sagittis eget nisi vitae.
+                    Excellent guidance and a highly efficient team. They go
+                    above and beyond working hours and technical limits to help
+                    you! I owe it to them to come back to life! Every problem,
+                    we've got your back...is how they reassure and aid
+                    customers. They have been really helpful thus far!
                   </p>
                   <ul className="flex justify-center mb-0">
                     <li>
