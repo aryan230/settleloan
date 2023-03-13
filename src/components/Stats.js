@@ -3,12 +3,12 @@ import React from "react";
 function Stats() {
   return (
     <div className="counter__area counter__mlr mb-70 z-index">
-      <div className="counter__shape-1">
+      {/* <div className="counter__shape-1">
         <img src="assets/img/counter/counter-shape-1.png" alt="" />
-      </div>
-      <div className="counter__shape-2">
+      </div> */}
+      {/* <div className="counter__shape-2">
         <img src="assets/img/counter/counter-shape-2.png" alt="" />
-      </div>
+      </div> */}
       <div className="counter__black-bg">
         <div className="container">
           <div className="row">

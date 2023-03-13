@@ -31,7 +31,7 @@ function Contact() {
   return (
     <div className="contact__area contact__plr-2 mt-100 mb-100 p-relative fix">
       {loader && <PELoader />}
-      <div className="contact__shape-1 d-none d-lg-block">
+      {/* <div className="contact__shape-1 d-none d-lg-block">
         <img src="assets/img/contact/ct-shape-1.png" alt="" />
       </div>
       <div className="contact__shape-2 d-none d-xxl-block">
@@ -42,7 +42,7 @@ function Contact() {
       </div>
       <div className="contact__shape-4 d-none d-lg-block">
         <img src="assets/img/contact/ct-shape-4.png" alt="" />
-      </div>
+      </div> */}
       <div className="contact__border">
         <div className="container">
           <div className="row align-items-center">

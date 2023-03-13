@@ -37,12 +37,12 @@ function ServicesGraph() {
   }, [posts]);
   return (
     <div className="service__area service__space service__mlr grey-bg pt-195 pb-70 p-relative">
-      <div className="service__shape-1">
+      {/* <div className="service__shape-1">
         <img src="assets/img/service/sv-shape-1.png" alt="" />
       </div>
       <div className="service__shape-2">
         <img src="assets/img/service/sv-shape-2.png" alt="" />
-      </div>
+      </div> */}
       <div className="container-fluid">
         <div className="row justify-content-center">
           <div
