@@ -43,6 +43,9 @@ function BlogSlug() {
   useEffect(() => {
     console.log(postData);
   }, [postData, slug]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />

@@ -121,7 +121,7 @@ function Hero() {
           <div className="col-xl-6 col-lg-6">
             <div className="slider__section-box">
               <h4 className="section-subtitle char-anim">
-                Settle Loan's, Settle Life!
+                Settle Loans, Settle Life!
               </h4>
               {/* <h4 class="section-subtitle char-anim">
                 Stop recovery calls in 24 hours.

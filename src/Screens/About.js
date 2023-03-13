@@ -18,7 +18,7 @@ function About() {
                 <div className="about-5__main-img text-center text-lg-start">
                   <a href="about-us.html">
                     <img
-                      src="https://i.ibb.co/qkmWgJD/Untitled-design.png"
+                      src="https://cdn.discordapp.com/attachments/993544507285061673/1084739123824312431/Social_Media_Profile_Picture_500_500_px_485_487_px.png"
                       alt=""
                     />
                   </a>

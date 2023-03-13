@@ -43,6 +43,9 @@ function ServiceSlug() {
   useEffect(() => {
     console.log(postData);
   }, [postData, slug]);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
@@ -55,28 +58,6 @@ function ServiceSlug() {
                   className="breadcrumb__area breadcrumb__plr breadcrumb__space breadcrumb__bg breadcrumb__overlay p-relative fix"
                   data-background="assets/img/slider/slider-bg-3.png"
                 >
-                  <div
-                    className="breadcrumb__shape-1 d-none d-md-block wow tpfadeRight"
-                    data-wow-duration=".9s"
-                    data-wow-delay=".3s"
-                  >
-                    <img src="assets/img/slider/shape-32.png" alt="" />
-                  </div>
-                  <div className="breadcrumb__shape-2 d-none d-md-block">
-                    <img src="assets/img/slider/shape-33.png" alt="" />
-                  </div>
-                  <div className="breadcrumb__shape-3 d-none d-xxl-block">
-                    <img src="assets/img/slider/shape-34.png" alt="" />
-                  </div>
-                  <div className="breadcrumb__shape-4">
-                    <img src="assets/img/slider/shape-35.png" alt="" />
-                  </div>
-                  <div className="breadcrumb__shape-5">
-                    <img src="assets/img/slider/shape-24.png" alt="" />
-                  </div>
-                  <div className="breadcrumb__shape-6">
-                    <img src="assets/img/slider/shape-22.png" alt="" />
-                  </div>
                   <div className="breadcrumb__big-text d-none d-lg-block">
                     <h2>Settle Loans</h2>
                   </div>
@@ -130,6 +111,12 @@ function ServiceSlug() {
                             <h1 className="text-stone-700">{children}</h1>
                           ),
                           bold: ({ children }) => <strong>{children}</strong>,
+                          li: ({ children }) => (
+                            <li className="py-1">
+                              <i className="fal fa-check-square p-1 text-indigo-600" />
+                              {children}
+                            </li>
+                          ),
                         }}
                       />
                     )}

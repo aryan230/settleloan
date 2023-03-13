@@ -9,6 +9,7 @@ function Contact() {
   const [name, setName] = useState();
   const [email, setEmail] = useState();
   const [message, setMessage] = useState();
+  const [number, setNumber] = useState();
   const [loader, setLoader] = useState(false);
   const collRef = collection(db, "contact-form");
   const formSubmitHandler = async (e) => {
@@ -17,6 +18,7 @@ function Contact() {
     const docRef = await addDoc(collRef, {
       name,
       email,
+      number,
       message,
     });
     window.setTimeout(() => {
@@ -59,7 +61,6 @@ function Contact() {
                   data-wow-delay=".5s"
                 >
                   Feel free to get in touch <br />
-                  Contact with us.
                 </h3>
               </div>
               <div
@@ -98,6 +99,18 @@ function Contact() {
                           placeholder="Your Email"
                           onChange={(e) => {
                             setEmail(e.target.value);
+                          }}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-sm-12">
+                      <div className="postbox__contact-input">
+                        <input
+                          type="number"
+                          placeholder="Your Number"
+                          onChange={(e) => {
+                            setNumber(e.target.value);
                           }}
                           required
                         />
@@ -147,7 +160,7 @@ function Contact() {
                     </span>
                   </div>
                   <div className="contact__content">
-                    <h4 className="contact__title-sm">Call This Now</h4>
+                    <h4 className="contact__title-sm">Call Us Now</h4>
                     <span>
                       <a href="tel:+919821219819">
                         +919821219819 <br />
