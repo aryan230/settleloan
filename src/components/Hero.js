@@ -213,6 +213,35 @@ function Hero() {
                       <label htmlFor="" className="are-you-facing">
                         Are you facing harassment by recovery agent / banks ?
                       </label>
+                      <div>
+                        <label htmlFor="f-option" className="l-radio">
+                          <input
+                            type="radio"
+                            id="f-option"
+                            name="selector"
+                            tabIndex={1}
+                            onChange={(e) => {
+                              setAreYouFacing(e.target.id);
+                            }}
+                          />
+                          <span>Yes</span>
+                        </label>
+                        <label htmlFor="s-option" className="l-radio">
+                          <input
+                            type="radio"
+                            id="s-option"
+                            name="selector"
+                            tabIndex={2}
+                            onChange={(e) => {
+                              setAreYouFacing(e.target.id);
+                            }}
+                          />
+                          <span>No</span>
+                        </label>
+                      </div>
+                      {/* <label htmlFor="" className="are-you-facing">
+                        Are you facing harassment by recovery agent / banks ?
+                      </label>
                       <div className="wrapper">
                         <input
                           type="radio"
@@ -241,7 +270,7 @@ function Hero() {
                           <div className="dot" />
                           <span>No</span>
                         </label>
-                      </div>
+                      </div> */}
                     </div>
                     <div
                       className="contact__button wow pt-20"
