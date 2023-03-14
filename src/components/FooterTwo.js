@@ -1,7 +1,9 @@
 import { GraphQLClient, gql } from "graphql-request";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-
+import Pdf_one from "../documents/FAQ.pdf";
+import Pdf_two from "../documents/Privacy_Policy.pdf";
+import Pdf_three from "../documents/Terms_and_Conditions.pdf";
 const graphcms = new GraphQLClient(
   "https://api-ap-south-1.hygraph.com/v2/clf3jxqh547va01t7126u21j0/master"
 );
@@ -56,7 +58,7 @@ export const FooterTwo = () => {
               title="Company"
               className="inline-flex items-center"
             >
-              <img src="https://www.settleloans.in/images/logo.png" alt="" />
+              <img src="https://i.ibb.co/p2pWRRM/logo.png" alt="" />
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-white">Settle Loans, Settle Life!</p>
@@ -92,7 +94,8 @@ export const FooterTwo = () => {
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href={Pdf_three}
+                    target="_blank"
                     className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
                     Terms & Conditions
@@ -100,7 +103,8 @@ export const FooterTwo = () => {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href={Pdf_two}
+                    target="_blank"
                     className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
                     Privacy Policy
@@ -108,7 +112,8 @@ export const FooterTwo = () => {
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href={Pdf_one}
+                    target="_blank"
                     className="transition-colors duration-300 text-gray-300 hover:text-teal-accent-400"
                   >
                     FAQ

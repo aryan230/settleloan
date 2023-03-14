@@ -40,19 +40,46 @@ function About() {
                       data-wow-delay=".7s"
                     >
                       <p>
-                        There is no hiding how stressful it is to be in debt.
-                        You might put on a brave face for your loved ones, but
-                        in reality, you can't stop stressing about where you
-                        will get the funds to pay your debts and keep the lights
-                        on in your house. You don't need to live that lifestyle.
-                        Because our Advocates will pursue legal action to stop
-                        the creditor's harassment, you can live a life
-                        comfortable in the assurance that your debts are now
-                        being managed and without worrying about creditors
-                        calling you or approaching your friends and family
-                        nonstop. We have served thousands of Indians just like
-                        you over the years. Experience tells us that many people
-                        find it hard to find the time.
+                        Dealing with debt can have a significant impact on your
+                        mental and emotional well-being. It can lead to feelings
+                        of hopelessness, anxiety, and depression, making it
+                        difficult to concentrate on other important aspects of
+                        your life, such as work or relationships. Moreover, the
+                        constant pressure of being in debt can strain your
+                        personal relationships, leading to further stress and
+                        isolation.
+                      </p>
+                      <p>
+                        However, seeking help from Settleloans can provide you
+                        with much-needed relief. We understand the challenges of
+                        being in debt and the impact it can have on your life.
+                        Our team is dedicated to providing you with
+                        comprehensive debt management solutions tailored to your
+                        unique needs, so you can regain control of your finances
+                        and your life.
+                      </p>
+                      <p>
+                        With our support, you can develop a plan to pay off your
+                        debts gradually while still maintaining your basic
+                        needs. Settleloans will also work with your creditors to
+                        negotiate lower interest rates and more favorable
+                        repayment terms, ensuring that you can manage your debts
+                        without incurring additional financial burden.
+                      </p>
+                      <p>
+                        At the same time, our team will handle all
+                        communications with your creditors, ensuring that you no
+                        longer have to endure constant calls and visits from
+                        debt collectors. This can provide you with a sense of
+                        peace and security, allowing you to focus on rebuilding
+                        your life without the added stress of dealing with
+                        creditors.
+                      </p>
+                      <p>
+                        So, if you're struggling with debt, don't suffer in
+                        silence. Contact Settleloans today to learn more about
+                        how we can help you regain control of your finances and
+                        your life.
                       </p>
                     </div>
                     <div

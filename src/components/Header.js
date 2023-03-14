@@ -72,7 +72,7 @@ function Header() {
                         <Link to="/about">About</Link>
                       </li>
                       <li className="has-dropdown">
-                        <a href="service-details.html">Service's</a>
+                        <Link to="/">Service's</Link>
                         <ul className="submenu">
                           {posts &&
                             posts.map((s) => (
@@ -172,7 +172,7 @@ function Header() {
           </div>
           <div className="itoffcanvas__logo">
             <a href="index.html">
-              <img src="https://www.settleloans.in/images/logo.png" alt="" />
+              <img src="https://i.ibb.co/p2pWRRM/logo.png" alt="" />
             </a>
           </div>
           <div className="itoffcanvas__text">
@@ -232,16 +232,16 @@ function Header() {
           </div>
           <div className="itoffcanvas__social">
             <div className="social-icon">
-              <a href="#">
+              <a href="https://www.linkedin.com/company/settleloans/">
                 <i className="fab fa-linkedin" />
               </a>
-              <a href="#">
+              <a href="https://instagram.com/settleloans?igshid=YmMyMTA2M2Y=">
                 <i className="fab fa-instagram" />
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=100089458940627&mibextid=LQQJ4d">
                 <i className="fab fa-facebook-square" />
               </a>
-              <a href="#">
+              <a href="https://www.youtube.com/@settleloans/">
                 <i className="fab fa-youtube" />
               </a>
             </div>

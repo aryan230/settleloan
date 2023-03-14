@@ -127,7 +127,7 @@ function Hero() {
                 Stop recovery calls in 24 hours.
               </h4> */}
               <h3 className="hero-title">
-                Stop your Bank harassment and start your Legal proceeding in 24
+                Stop your Bank harassment and start Legal proceeding in 24
                 hours.
               </h3>
             </div>
